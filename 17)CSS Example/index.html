@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Example Layout</title>
+</head>
+<body>
+    
+<div id="LeftMenu">
+    <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+    <div class="mainNav">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+<span onclick="openBtn()">&#9776; Menu</span>
+
+    <div class="home">
+        <div class="box">
+            <h2>Creative Aency</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, perspiciatis!</p>
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <div class="box">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, perspiciatis!</p>
+        </div>
+    </div>
+
+    
+    <div id="portfolio" class="portfolio">
+        <div class="box">
+            <h2>Our Works</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, perspiciatis!</p>
+        </div>
+    </div>
+
+    
+    <div id="services" class="services">
+        <div class="box">
+            <h2>Our Services</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, perspiciatis!</p>
+        </div>
+    </div>
+
+
+    
+    <div id="blog" class="blog">
+        <div class="box">
+            <h2>Our Blog</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, perspiciatis!</p>
+        </div>
+    </div>
+
+
+    
+    <div id="contact" class="contact">
+        <div class="box">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, perspiciatis!</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <script>
+        function openBtn() {
+            document.getElementById("LeftMenu").style.width = "250px";
+        }
+
+        function closeBtn() {
+            document.getElementById("LeftMenu").style.width = "0";
+        }
+    </script>
+</body>
+</html>
